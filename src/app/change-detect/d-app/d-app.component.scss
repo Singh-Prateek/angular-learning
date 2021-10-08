@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: min(25em, 40vw);
+
+    & > button {
+        padding: 1em 0.5em;
+        border: 0px;
+        transition: transform ease-out 100ms, 
+        box-shadow ease-out 120ms;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-.25em);
+            box-shadow: 0 0.25em 1em 0 #bdbdbd;
+        }
+    }
+    .sub-container {
+        display: flex;
+        flex-direction: row;
+        & > span {
+            margin-block: 1.1em;
+            padding: 0.5em;
+            padding-left: inherit;
+            font-weight: bolder;
+        }
+    }
+}

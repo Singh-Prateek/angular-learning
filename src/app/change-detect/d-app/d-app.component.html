@@ -1,0 +1,12 @@
+<h2>Change Detect Demo</h2>
+<div class="container">
+    <app-default-counter [Counter]='Counter'></app-default-counter>
+    <div class="sub-container">
+        <span>
+            did not change the ref
+        </span>
+        <app-push-counter [Counter]='Counter'></app-push-counter>
+    </div>
+    <app-push-counter [Counter]='CounterPush'></app-push-counter>
+    <button (click)="incCount()">Increase Count</button>
+</div>
