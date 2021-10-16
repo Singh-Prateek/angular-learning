@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-d-app',
@@ -10,6 +11,8 @@ export class DAppComponent implements OnInit {
   Counter = {
     count: 1
   };
+
+  CounterObs = new BehaviorSubject(this.Counter);
 
   CounterPush = {
     count: -1
@@ -26,6 +29,8 @@ export class DAppComponent implements OnInit {
     this.CounterPush = {
       count: this.Counter.count + 1
     }
+
+    this.CounterObs.next(this.Counter);
 
     console.log(`this.Counter.count :${this.Counter.count}`)
   }

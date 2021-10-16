@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { DefaultCounterComponent } from './default-counter/default-counter.component';
 import { PushCounterComponent } from './push-counter/push-counter.component';
 import { DAppComponent } from './d-app/d-app.component';
+import { PushCounter2Component } from './push-counter-2/push-counter2.component';
+import { PushCounter3Component } from './push-counter-3/push-counter3.component';
+import { PushCounter4Component } from './push-counter-4/push-counter4.component';
 
 
 
@@ -10,7 +13,10 @@ import { DAppComponent } from './d-app/d-app.component';
   declarations: [
     DefaultCounterComponent,
     PushCounterComponent,
-    DAppComponent
+    PushCounter2Component,
+    DAppComponent,
+    PushCounter3Component,
+    PushCounter4Component
   ],
   imports: [
     CommonModule
