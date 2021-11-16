@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChangeDetectModule } from './change-detect/change-detect.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ChangeDetectModule } from './change-detect/change-detect.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChangeDetectModule
+    ChangeDetectModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
