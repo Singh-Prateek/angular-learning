@@ -1,4 +1,4 @@
-<h2>Change Detect Demo</h2>
+<h1>Change Detect Demo</h1>
 <div class="container">
     <app-default-counter [Counter]='Counter'></app-default-counter>
     <div class="sub-container">
@@ -8,10 +8,10 @@
         <app-push-counter [Counter]='Counter'></app-push-counter>
     </div>
     <app-push-counter [Counter]='CounterPush'></app-push-counter>
-    <div style="margin-bottom: 1em;">
+    <div class="mb-3">
         <app-push-counter2 [Counter]='Counter'></app-push-counter2>
-    </div>    
-        <app-push-counter3 [Counter]='CounterObs'></app-push-counter3>
-        <app-push-counter4 [Counter]='CounterObs'></app-push-counter4>
-    <button (click)="incCount()">Increase Count</button>
+    </div>
+    <app-push-counter3 [Counter]='CounterObs'></app-push-counter3>
+    <app-push-counter4 [Counter]='CounterObs'></app-push-counter4>
+    <button type="button" (click)="incCount()">Increase Count</button>
 </div>
