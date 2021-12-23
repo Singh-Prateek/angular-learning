@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChangeDetectModule } from './change-detect/change-detect.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomAttrModule } from './custom-attr/custom-attr.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     ChangeDetectModule,
+    CustomAttrModule,
     BrowserAnimationsModule
   ],
   providers: [],
