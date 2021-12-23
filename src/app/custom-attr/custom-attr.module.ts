@@ -4,11 +4,10 @@ import { NumericTextboxDirective } from './numeric-textbox.directive';
 import { AttrDemoComponent } from './attr-demo/attr-demo.component';
 
 
-
 @NgModule({
   declarations: [
     NumericTextboxDirective,
-    AttrDemoComponent
+    AttrDemoComponent 
   ],
   imports: [
     CommonModule
