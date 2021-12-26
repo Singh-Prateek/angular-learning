@@ -1,12 +1,22 @@
-.active-link{
-    background-color: darkblue;
-    color: white;
-}
-
 nav{
-    padding: .25em 0em;
- a{
-    padding: .25em .5em;
-}
+    
+    .nav-items{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0; 
 
+        
+        li{
+            list-style: none;
+            a{
+                color: darkblue;
+                padding: .5em .75em;
+            }
+            .active-link{
+                background-color: darkblue;
+                color: white;
+            }
+        }
+    }
 }
