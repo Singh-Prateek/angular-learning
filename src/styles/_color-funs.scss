@@ -1,0 +1,5 @@
+@mixin set-color {
+    border-color: hsl(var(--btn-hue), var(--btn-saturation), var(--btn-lightness));
+    background-color: hsl(var(--btn-hue) var(--btn-saturation) var(--btn-lightness));
+    box-shadow: 2px 2px 3px 0 hsl(var(--btn-hue) var(--btn-saturation) var(--btn-lightness) / 80);
+}

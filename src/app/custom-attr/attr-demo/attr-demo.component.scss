@@ -1,6 +1,23 @@
-input{
-    padding: .5em .25em;
-    border-radius: 0em;
-    border-color: darkgrey;
-    border-style: solid;
+@use '../../../styles/color-funs' as *;
+
+.display-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-block: 1em;
+    input {
+        padding: 0.5em 0.75em;
+        border-radius: 0em;
+        border-style: solid;
+        color: #e1e1e1;
+        cursor: pointer;
+        @include set-color();
+        &:disabled {
+            --btn-saturation: 50%;
+            --btn-lightness: 75%;
+            color: #f1f1f1;
+            @include set-color();
+            cursor: not-allowed;
+        }
+    }
 }
