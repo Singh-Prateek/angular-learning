@@ -1,6 +1,8 @@
-# Angular13
+[![Node.js build](https://github.com/Singh-Prateek/angular-learning/actions/workflows/node.js.yml/badge.svg)](https://github.com/Singh-Prateek/angular-learning/actions/workflows/node.js.yml)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0-next.8.
+# Angular 13
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
 
 ## Development server
 
