@@ -1,3 +1,15 @@
 <p>attr-demo works!</p>
 
-<input type="text" numeric-textbox value="" placeholder="enter text" >
+<!-- <input type="text" numeric-textbox value="" placeholder="enter text"> -->
+
+
+<div class="display-block">
+    <input type="button" appDisableAfterClick value="one click disable" />
+    <input type="button" value="{{disableState ? 'enable':'disable'}} two way button >>"
+        (click)="disableState= !disableState">
+    <input type="button" appDisableAfterClick [(disabled)]="disableState" value="two way binding" />
+    <input type="button" appDisableAfterClick [disabled]="disabledState$" (click)="onObservableClick()"
+        value="observable button" />
+    <input type="button" appDisableAfterClick #btnTmp="disable-after-click" (click)="onTempState(btnTmp)"
+        value="switch state with temp variable" />
+</div>

@@ -1,3 +1,5 @@
+@use  '../styles/color-funs' as *;
+
 nav{
     
     .nav-items{
@@ -10,11 +12,16 @@ nav{
         li{
             list-style: none;
             a{
-                color: darkblue;
+                --btn-hue: 220;
+                --btn-saturation:70%;
+                 color: #eee;
+                @include set-color();
                 padding: .5em .75em;
             }
             .active-link{
-                background-color: darkblue;
+                --btn-hue: 210;
+                --btn-saturation:100%;
+                @include set-color();
                 color: white;
             }
         }
