@@ -1,0 +1,6 @@
+@mixin flex-box {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-block: 1em;
+}
