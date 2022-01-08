@@ -1,26 +1,25 @@
-@use  '../styles/color-funs' as *;
+@use "../styles/color-funs" as *;
 
-nav{
-    
-    .nav-items{
+nav {
+    .nav-items {
         display: flex;
         flex-wrap: wrap;
         margin: 0;
-        padding: 0; 
+        padding: 0;
+        gap: 0.5em;
 
-        
-        li{
+        li {
             list-style: none;
-            a{
+            a {
                 --btn-hue: 220;
-                --btn-saturation:70%;
-                 color: #eee;
+                --btn-saturation: 70%;
+                color: #eee;
                 @include set-color();
-                padding: .5em .75em;
+                padding: 0.5em 0.75em;
             }
-            .active-link{
+            .active-link {
                 --btn-hue: 210;
-                --btn-saturation:100%;
+                --btn-saturation: 100%;
                 @include set-color();
                 color: white;
             }
