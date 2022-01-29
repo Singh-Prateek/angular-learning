@@ -1,10 +1,17 @@
-@use '../../../styles/color-funs' as *;
+@use "../../../styles/color-funs" as *;
+@use "../../../styles/layout" as *;
+
+.numeric-block {
+    @include flex-box();
+    input {
+        padding: 0.5em 0.75em;
+        border-radius: 0em;
+        border-style: solid;
+    }
+}
 
 .display-block {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    margin-block: 1em;
+    @include flex-box();
     input {
         padding: 0.5em 0.75em;
         border-radius: 0em;

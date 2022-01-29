@@ -1,9 +1,10 @@
 import { Directive, HostBinding, Input, Output, OnInit, OnDestroy, EventEmitter, HostListener } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
+import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion'
 
 @Directive({
   selector: 'input[appDisableAfterClick]',
-  exportAs:'disable-after-click'
+  exportAs: 'disable-after-click'
 })
 export class DisableAfterClickDirective implements OnInit, OnDestroy {
 
@@ -13,15 +14,15 @@ export class DisableAfterClickDirective implements OnInit, OnDestroy {
 
   @HostBinding()
   @Input()
-  set disabled(value: boolean | Observable<boolean>) {
+  get disabled() { return this._disabled; }
+  set disabled(value: BooleanInput | Observable<boolean>) {
     if (value instanceof Observable) {
       this._disabled$ = value;
     }
     else {
-      this._disabled = value;
+      this._disabled = coerceBooleanProperty(value);
     }
   }
-  get disabled() { return this._disabled; }
 
   @Output('disabledChange') onClickDisabled = new EventEmitter<boolean>()
 
