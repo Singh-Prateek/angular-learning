@@ -1,0 +1,11 @@
+<a href="##" id="topLink" style="display: block; visibility: collapse;">top</a>
+<button (click)="logScrollPosition('anchor','bottomLink')">move to bottom position</button>
+<div [style.height]="'700px'">
+    &nbsp;
+</div>
+<button (click)="logScrollPosition('anchor','topLink')">move to anchor(top) position</button>
+<div [style.height]="'700px'">
+    &nbsp;
+</div>
+<button (click)="logScrollPosition('pos','700')">move to scroll position</button>
+<a href="##" id="bottomLink" style="display: block; visibility: collapse;">bottom</a>
