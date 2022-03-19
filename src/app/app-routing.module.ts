@@ -4,6 +4,7 @@ import { DatePickerDemoComponent } from './app-material/date-picker-demo/date-pi
 import { DAppComponent } from './change-detect/d-app/d-app.component';
 import { AttrDemoComponent } from './custom-attr/attr-demo/attr-demo.component';
 import { ScrollServiceComponent } from './scroll-service/scroll-service.component';
+import { UniqueIdComponent } from './unique-id/unique-id.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "scroll",
     component: ScrollServiceComponent
+  },
+  {
+    path: "uuid",
+    component: UniqueIdComponent
   }
 ];
 
