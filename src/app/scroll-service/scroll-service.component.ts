@@ -14,7 +14,8 @@ export class ScrollServiceComponent implements OnInit {
   }
 
   logScrollPosition(type: 'anchor' | 'pos', value: string) {
-    console.log('before', this.scroller.getScrollPosition());
+    let [x,y] = this.scroller.getScrollPosition();
+    console.log('before x:%s, y:%s', x,y );
     if (type === 'anchor') {
       this.scroller.scrollToAnchor(value);
     } else {
