@@ -9,19 +9,23 @@ import { UniqueIdComponent } from './unique-id/unique-id.component';
 const routes: Routes = [
   {
     path: "changedetect",
-    component: DAppComponent
+    component: DAppComponent,
+    title: "NG: change detection"
   },
   {
     path: "attrdemo",
-    component: AttrDemoComponent
+    component: AttrDemoComponent,
+    title: "NG: attribute demo"
   },
   {
     path: "materialdemo",
-    component: DatePickerDemoComponent
+    component: DatePickerDemoComponent,
+    title: "NG: date picker customization"
   },
   {
     path: "scroll",
-    component: ScrollServiceComponent
+    component: ScrollServiceComponent,
+    title: "NG: scroll"
   },
   {
     path: "uuid",

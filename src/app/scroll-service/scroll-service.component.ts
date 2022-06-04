@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-scroll-service',
   templateUrl: './scroll-service.component.html',
-  styleUrls: ['./scroll-service.component.scss']
+  styleUrls: ['./scroll-service.component.scss'],
+  standalone: true
 })
 export class ScrollServiceComponent implements OnInit {
 
@@ -14,8 +15,8 @@ export class ScrollServiceComponent implements OnInit {
   }
 
   logScrollPosition(type: 'anchor' | 'pos', value: string) {
-    let [x,y] = this.scroller.getScrollPosition();
-    console.log('before x:%s, y:%s', x,y );
+    let [x, y] = this.scroller.getScrollPosition();
+    console.log('before x:%s, y:%s', x, y);
     if (type === 'anchor') {
       this.scroller.scrollToAnchor(value);
     } else {

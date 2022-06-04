@@ -14,3 +14,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 2. Attribute to allow only numeric key strokes.
 3. scroll service of angular
 4. calendar extension
+5. added title url
+6. converted uuid and scroll service as standalone component.

@@ -4,7 +4,8 @@ import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
 @Component({
   selector: 'app-unique-id',
   templateUrl: './unique-id.component.html',
-  styleUrls: ['./unique-id.component.scss']
+  styleUrls: ['./unique-id.component.scss'],
+  standalone: true
 })
 export class UniqueIdComponent implements OnInit {
 
