@@ -30,6 +30,11 @@ const routes: Routes = [
   {
     path: "uuid",
     component: UniqueIdComponent
+  },
+  {
+    path: "deeprouting",
+    loadChildren: ()=> import('./routing-demo/routing-demo.module')
+    .then(m=>m.RoutingDemoModule)
   }
 ];
 
