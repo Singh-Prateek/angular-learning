@@ -2,19 +2,19 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mat-sub-navigation',
-  template: `<nav>
+  template: `<nav class="sub-nav-bar">
     <ul>
       <li>
-        <a  [routerLink]="['date']" >date demo</a>
+        <a  [routerLink]="['date']" routerLinkActive="active" >date demo</a>
       </li>
       <li>
-        <a  [routerLink]="['icon']" >icon demos</a>
+        <a  [routerLink]="['icon']" routerLinkActive="active">icon demos</a>
       </li>
     </ul>
   </nav>
   <router-outlet></router-outlet>
   `,
-  styleUrls: []
+  styles: [``]
 })
 export class MatSubNavigationComponent implements OnInit {
 

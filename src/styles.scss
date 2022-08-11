@@ -1,9 +1,9 @@
-@use 'styles/mat_theme';
+@use "styles/mat_theme";
 /* You can add global styles to this file, and also import other style files */
-:root{
-    --btn-hue:220;
-    --btn-saturation:100%;
-    --btn-lightness:50%;
+:root {
+    --btn-hue: 220;
+    --btn-saturation: 100%;
+    --btn-lightness: 50%;
 }
 
 html,
@@ -19,4 +19,29 @@ h1,
 h2,
 h3 {
     font-weight: normal;
+}
+
+.sub-nav-bar {
+    display: flex;
+    margin-block: 1em;
+    padding-block: 1em;
+
+    & ul {
+        padding-inline: 0em;
+        & li {
+            display: inline-block;
+            margin-inline: 0.5em;
+            list-style: none;
+            & a {
+                color: #0d6efd;
+                text-decoration: none;
+            }
+            .active {
+                text-underline-position: under;
+                text-underline-offset: 0.2em;
+                text-decoration-line: underline;
+                text-decoration-thickness: 0.25em;
+            }
+        }
+    }
 }
