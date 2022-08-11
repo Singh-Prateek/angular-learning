@@ -18,7 +18,7 @@ nav {
                 padding: 0.5em 0.75em;
             }
             .active-link {
-                --btn-hue: 210;
+                --btn-hue: 200;
                 --btn-saturation: 100%;
                 @include set-color();
                 color: white;
