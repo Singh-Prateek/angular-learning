@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { ChangeDetectModule } from './change-detect/change-detect.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomAttrModule } from './custom-attr/custom-attr.module';
+import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainNavigationComponent
   ],
   imports: [
     BrowserModule,

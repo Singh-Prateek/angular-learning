@@ -1,0 +1,30 @@
+nav {
+    .nav-container {
+        display: block;
+    }
+    .nav-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            padding: 0.5em 0.75em;
+            a {
+                padding: 0.5em 0.75em;
+                color: var(--ngapp-primary-color);
+                text-decoration: none;
+            }
+            .active-link {
+                color: var(--ngapp-primary-color);
+                border-top: none;
+                border-bottom: 0.25em solid currentColor;
+            }
+        }
+    }
+}
