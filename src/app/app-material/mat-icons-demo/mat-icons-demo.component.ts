@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
 
 @Component({
   selector: 'app-mat-icons-demo',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatIconsDemoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly iconRegistry: MatIconRegistry) {
+    // console.info(iconRegistry.getDefaultFontSetClass());
+    // iconRegistry.setDefaultFontSetClass("material-icons-round", "mat-ligature-font", "orange600");
+    // console.info(iconRegistry.getDefaultFontSetClass());
+  }
 
   ngOnInit(): void {
   }

@@ -5,6 +5,7 @@
     --btn-saturation: 100%;
     --btn-lightness: 50%;
     --ngapp-primary-color: hsl(216 98% 52%);
+    --ngapp-secondary-color: #880e4f;
 }
 
 html,
@@ -13,7 +14,7 @@ body {
 }
 body {
     margin: 1em;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: Rubik, "Helvetica Neue", sans-serif;
 }
 
 h1,
@@ -24,8 +25,6 @@ h3 {
 
 .sub-nav-bar {
     display: flex;
-    margin-block: 1em;
-    padding-block: 1em;
 
     & ul {
         padding-inline: 0em;
@@ -34,7 +33,7 @@ h3 {
             margin-inline: 0.5em;
             list-style: none;
             & a {
-                color: var(--ngapp-primary-color);
+                color: var(--ngapp-secondary-color);
                 text-decoration: none;
             }
             .active {

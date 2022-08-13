@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconsDemoComponent } from './mat-icons-demo/mat-icons-demo.component';
 import { MatSubNavigationComponent } from './mat-sub-navigation.component';
 import { AppMaterialRoutingModule } from './app-material-routing.module';
-
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,6 +21,11 @@ import { AppMaterialRoutingModule } from './app-material-routing.module';
     MatDatepickerModule,
     MatFormFieldModule,
     MatInputModule,
+    MatIconModule
   ]
 })
-export class AppMaterialModule { }
+export class AppMaterialModule { 
+  constructor(private iconRegistry: MatIconRegistry) {
+    iconRegistry.setDefaultFontSetClass("material-icons-round", "mat-ligature-font", "blue900");
+  }
+}
