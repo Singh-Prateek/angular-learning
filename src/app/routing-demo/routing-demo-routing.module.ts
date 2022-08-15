@@ -1,21 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutSubnavComponent } from './about-subnav/about-subnav.component';
 import { HomeComponent } from './home.component';
 import { ListComponent } from './list/list.component';
+import { SubNavigationComponent } from './sub-navigation.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: SubNavigationComponent,
     children: [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'list'
+        redirectTo: 'home'
       },
       {
         path: "list",
-        component: ListComponent
+        component: ListComponent,
+        title:"routing: List"
+      },
+      {
+        path: "home",
+        component: HomeComponent,
+        title:"routing: Home"
+      },
+      {
+        path: "about",
+        component: AboutSubnavComponent,
+        title:"routing: About"
       }
     ]
   }

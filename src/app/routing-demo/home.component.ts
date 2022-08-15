@@ -4,9 +4,11 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
     <p>
-      home works!
+      home works! 
     </p>
-    <router-outlet></router-outlet>
+    <h1>
+      this is the landing page for <b>RoutingDemoModule</b>.
+    </h1>
   `,
   styles: [
   ]
