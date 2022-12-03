@@ -2,18 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DatePickerDemoComponent } from './date-picker-demo/date-picker-demo.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
-import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatIconsDemoComponent } from './mat-icons-demo/mat-icons-demo.component';
 import { MatSubNavigationComponent } from './mat-sub-navigation.component';
 import { AppMaterialRoutingModule } from './app-material-routing.module';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { MgDirDirective } from './mg-dir.directive';
+import { LnMenuComponent, LnMenuItemComponent } from './ln-menu.component';
 
 @NgModule({
   declarations: [
     DatePickerDemoComponent,
     MatIconsDemoComponent,
-    MatSubNavigationComponent
+    MatSubNavigationComponent,
+    MgDirDirective,
+    LnMenuComponent,
+    LnMenuItemComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +26,7 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
     MatDatepickerModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
   ]
 })
 export class AppMaterialModule { 
