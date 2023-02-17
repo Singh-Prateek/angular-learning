@@ -13,8 +13,7 @@ import { Component, OnInit } from '@angular/core';
     </ul>
   </nav>
   <router-outlet></router-outlet>
-  `,
-  styles: [``]
+  `
 })
 export class MatSubNavigationComponent implements OnInit {
 
