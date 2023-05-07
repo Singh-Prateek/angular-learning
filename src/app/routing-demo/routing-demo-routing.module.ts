@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { AboutSubnavComponent } from './about-subnav/about-subnav.component';
 import { HomeComponent } from './home.component';
 import { ListComponent } from './list/list.component';
 import { SubNavigationComponent } from './sub-navigation.component';
 
-const routes: Routes = [
+export const DeomoRoutes: Routes = [
   {
     path: '',
     component: SubNavigationComponent,
@@ -34,8 +33,3 @@ const routes: Routes = [
   }
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class RoutingDemoRoutingModule { }

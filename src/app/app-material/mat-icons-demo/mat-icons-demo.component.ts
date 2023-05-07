@@ -11,9 +11,9 @@ import { MatIconRegistry, MatIconModule } from '@angular/material/icon';
 export class MatIconsDemoComponent implements OnInit {
 
   constructor(private readonly iconRegistry: MatIconRegistry) {
-    // console.info(iconRegistry.getDefaultFontSetClass());
-    // iconRegistry.setDefaultFontSetClass("material-icons-round", "mat-ligature-font", "orange600");
-    // console.info(iconRegistry.getDefaultFontSetClass());
+    console.info(iconRegistry.getDefaultFontSetClass());
+    iconRegistry.setDefaultFontSetClass("material-icons-round", "mat-ligature-font", "blue600");
+    console.info(iconRegistry.getDefaultFontSetClass());
   }
 
   ngOnInit(): void {

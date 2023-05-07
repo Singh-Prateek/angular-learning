@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular13": {
+    "angular16": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular13:build:production"
+              "browserTarget": "angular16:build:production"
             },
             "development": {
-              "browserTarget": "angular13:build:development"
+              "browserTarget": "angular16:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular13:build"
+            "browserTarget": "angular16:build"
           }
         },
         "test": {
