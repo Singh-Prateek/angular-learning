@@ -21,7 +21,7 @@ export const routes: Routes = [
     path: "materialdemo",
     //component: MatSubNavigationComponent,
     //title: "NG: date picker customization"
-    loadChildren: () => import('./app-material/app-material.module')
+    loadChildren: () => import('./app-material/app-material-routing')
       .then(r => MatRoutes )
   },
   {
