@@ -1,10 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { PushCounter4Component } from '../push-counter-4/push-counter4.component';
+import { PushCounter3Component } from '../push-counter-3/push-counter3.component';
+import { PushCounter2Component } from '../push-counter-2/push-counter2.component';
+import { PushCounterComponent } from '../push-counter/push-counter.component';
+import { DefaultCounterComponent } from '../default-counter/default-counter.component';
 
 @Component({
-  selector: 'app-d-app',
-  templateUrl: './d-app.component.html',
-  styleUrls: ['./d-app.component.scss']
+    selector: 'app-d-app',
+    templateUrl: './d-app.component.html',
+    styleUrls: ['./d-app.component.scss'],
+    standalone: true,
+    imports: [DefaultCounterComponent, PushCounterComponent, PushCounter2Component, PushCounter3Component, PushCounter4Component]
 })
 export class DAppComponent implements OnInit {
 

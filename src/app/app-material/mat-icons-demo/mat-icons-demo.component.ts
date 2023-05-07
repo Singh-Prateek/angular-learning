@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
+import { MatIconRegistry, MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-mat-icons-demo',
-  templateUrl: './mat-icons-demo.component.html',
-  styleUrls: ['./mat-icons-demo.component.scss']
+    selector: 'app-mat-icons-demo',
+    templateUrl: './mat-icons-demo.component.html',
+    styleUrls: ['./mat-icons-demo.component.scss'],
+    standalone: true,
+    imports: [MatIconModule]
 })
 export class MatIconsDemoComponent implements OnInit {
 

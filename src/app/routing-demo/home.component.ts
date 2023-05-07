@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  template: `
+    selector: 'app-home',
+    template: `
     <p>
       home works! 
     </p>
@@ -10,8 +10,8 @@ import { Component, OnInit } from '@angular/core';
       this is the landing page for <b>RoutingDemoModule</b>.
     </h1>
   `,
-  styles: [
-  ]
+    styles: [],
+    standalone: true
 })
 export class HomeComponent implements OnInit {
 

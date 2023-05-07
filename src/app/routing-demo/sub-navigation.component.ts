@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-sub-navigation',
-  template: ` <nav class="sub-nav-bar">
+    selector: 'app-sub-navigation',
+    template: ` <nav class="sub-nav-bar">
     <ul>
       <li>
         <a  [routerLink]="['home']" routerLinkActive="active" >Sub Home</a>
@@ -17,7 +18,9 @@ import { Component, OnInit } from '@angular/core';
   </nav>
   <router-outlet></router-outlet>
   `,
-  styleUrls: []
+    styleUrls: [],
+    standalone: true,
+    imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class SubNavigationComponent implements OnInit {
 

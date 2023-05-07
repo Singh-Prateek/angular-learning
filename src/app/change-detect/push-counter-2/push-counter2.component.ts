@@ -6,7 +6,8 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
     <h3> count (push stratgey) = {{Counter.count}}</h3>
     <button (click)='0'>refresh</button>
     `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true
 })
 export class PushCounter2Component implements OnInit {
 

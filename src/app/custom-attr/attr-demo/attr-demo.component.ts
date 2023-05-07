@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { DisableAfterClickDirective } from '../disable-after-click.directive';
+import { NumericTextboxDirective } from '../numeric-textbox.directive';
 
 @Component({
-  selector: 'app-attr-demo',
-  templateUrl: './attr-demo.component.html',
-  styleUrls: ['./attr-demo.component.scss']
+    selector: 'app-attr-demo',
+    templateUrl: './attr-demo.component.html',
+    styleUrls: ['./attr-demo.component.scss'],
+    standalone: true,
+    imports: [NumericTextboxDirective, DisableAfterClickDirective]
 })
 export class AttrDemoComponent implements OnInit {
 

@@ -3,8 +3,9 @@ import { Observable, Subscription } from 'rxjs';
 import { BooleanInput, coerceBooleanProperty } from '@angular/cdk/coercion'
 
 @Directive({
-  selector: 'input[appDisableAfterClick]',
-  exportAs: 'disable-after-click'
+    selector: 'input[appDisableAfterClick]',
+    exportAs: 'disable-after-click',
+    standalone: true
 })
 export class DisableAfterClickDirective implements OnInit, OnDestroy {
 

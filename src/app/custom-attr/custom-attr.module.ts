@@ -6,17 +6,15 @@ import { DisableAfterClickDirective } from './disable-after-click.directive';
 
 
 @NgModule({
-  declarations: [
-    NumericTextboxDirective,
-    AttrDemoComponent,
-    DisableAfterClickDirective 
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    NumericTextboxDirective,
-    AttrDemoComponent
-  ]
+    imports: [
+        CommonModule,
+        NumericTextboxDirective,
+        AttrDemoComponent,
+        DisableAfterClickDirective
+    ],
+    exports: [
+        NumericTextboxDirective,
+        AttrDemoComponent
+    ]
 })
 export class CustomAttrModule { }

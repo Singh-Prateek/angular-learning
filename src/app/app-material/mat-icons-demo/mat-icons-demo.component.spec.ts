@@ -8,7 +8,7 @@ describe('MatIconsDemoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    declarations: [MatIconsDemoComponent]
+    imports: [MatIconsDemoComponent]
 })
     .compileComponents();
 

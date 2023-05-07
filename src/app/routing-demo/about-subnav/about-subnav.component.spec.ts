@@ -8,7 +8,7 @@ describe('AboutSubnavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    declarations: [AboutSubnavComponent]
+    imports: [AboutSubnavComponent]
 })
     .compileComponents();
 

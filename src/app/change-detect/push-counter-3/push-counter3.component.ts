@@ -2,9 +2,10 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnDestroy
 import { catchError, EMPTY, filter, Observable, of, Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-push-counter3',
-  template: `<h3> count in child <br>(push stratgey) = {{count}}</h3>`,
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-push-counter3',
+    template: `<h3> count in child <br>(push stratgey) = {{count}}</h3>`,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true
 })
 export class PushCounter3Component implements OnInit, OnDestroy {
 

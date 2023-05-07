@@ -8,7 +8,7 @@ describe('AttrDemoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    declarations: [AttrDemoComponent]
+    imports: [AttrDemoComponent]
 })
     .compileComponents();
   });

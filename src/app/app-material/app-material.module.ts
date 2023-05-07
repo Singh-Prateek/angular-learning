@@ -12,22 +12,20 @@ import { MgDirDirective } from './mg-dir.directive';
 import { LnMenuComponent, LnMenuItemComponent } from './ln-menu.component';
 
 @NgModule({
-  declarations: [
-    DatePickerDemoComponent,
-    MatIconsDemoComponent,
-    MatSubNavigationComponent,
-    MgDirDirective,
-    LnMenuComponent,
-    LnMenuItemComponent
-  ],
-  imports: [
-    CommonModule,
-    AppMaterialRoutingModule,
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
-  ]
+    imports: [
+        CommonModule,
+        AppMaterialRoutingModule,
+        MatDatepickerModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatIconModule,
+        DatePickerDemoComponent,
+        MatIconsDemoComponent,
+        MatSubNavigationComponent,
+        MgDirDirective,
+        LnMenuComponent,
+        LnMenuItemComponent,
+    ]
 })
 export class AppMaterialModule { 
   constructor(private iconRegistry: MatIconRegistry) {

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-mat-sub-navigation',
-  template: `<nav class="sub-nav-bar">
+    selector: 'app-mat-sub-navigation',
+    template: `<nav class="sub-nav-bar">
     <ul>
       <li>
         <a  [routerLink]="['date']" routerLinkActive="active" >date demo</a>
@@ -13,7 +14,9 @@ import { Component, OnInit } from '@angular/core';
     </ul>
   </nav>
   <router-outlet></router-outlet>
-  `
+  `,
+    standalone: true,
+    imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class MatSubNavigationComponent implements OnInit {
 

@@ -1,7 +1,8 @@
 import { Directive, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
-  selector: 'input[numeric-textbox]'
+    selector: 'input[numeric-textbox]',
+    standalone: true
 })
 export class NumericTextboxDirective {
 

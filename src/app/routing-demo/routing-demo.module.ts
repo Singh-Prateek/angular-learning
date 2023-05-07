@@ -9,15 +9,13 @@ import { AboutSubnavComponent } from './about-subnav/about-subnav.component';
 
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    ListComponent,
-    SubNavigationComponent,
-    AboutSubnavComponent
-  ],
-  imports: [
-    CommonModule,
-    RoutingDemoRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        RoutingDemoRoutingModule,
+        HomeComponent,
+        ListComponent,
+        SubNavigationComponent,
+        AboutSubnavComponent
+    ]
 })
 export class RoutingDemoModule { }
