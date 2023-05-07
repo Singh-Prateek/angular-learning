@@ -8,8 +8,8 @@ describe('MatIconsDemoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MatIconsDemoComponent ]
-    })
+    declarations: [MatIconsDemoComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(MatIconsDemoComponent);

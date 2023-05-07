@@ -8,8 +8,8 @@ describe('DAppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DAppComponent ]
-    })
+    declarations: [DAppComponent]
+})
     .compileComponents();
   });
 

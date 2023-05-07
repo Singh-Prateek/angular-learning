@@ -8,8 +8,8 @@ describe('AboutSubnavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AboutSubnavComponent ]
-    })
+    declarations: [AboutSubnavComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(AboutSubnavComponent);

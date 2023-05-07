@@ -8,8 +8,8 @@ describe('UniqueIdComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UniqueIdComponent ]
-    })
+    imports: [UniqueIdComponent]
+})
     .compileComponents();
   });
 
