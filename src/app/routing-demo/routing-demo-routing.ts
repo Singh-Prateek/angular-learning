@@ -4,7 +4,7 @@ import { HomeComponent } from './home.component';
 import { ListComponent } from './list/list.component';
 import { SubNavigationComponent } from './sub-navigation.component';
 
-export const DeomoRoutes: Routes = [
+export const DemoRoutes: Routes = [
   {
     path: '',
     component: SubNavigationComponent,
@@ -33,3 +33,4 @@ export const DeomoRoutes: Routes = [
   }
 ];
 
+export default DemoRoutes;

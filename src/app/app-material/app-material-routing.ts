@@ -3,7 +3,7 @@ import { DatePickerDemoComponent } from './date-picker-demo/date-picker-demo.com
 import { MatIconsDemoComponent } from './mat-icons-demo/mat-icons-demo.component';
 import { MatSubNavigationComponent } from './mat-sub-navigation.component';
 
-export const MatRoutes: Routes = [
+const MatRoutes: Routes = [
   {
     path: '',
     component: MatSubNavigationComponent,
@@ -24,4 +24,6 @@ export const MatRoutes: Routes = [
     ]
   }
 ];
+
+export default MatRoutes;
 
