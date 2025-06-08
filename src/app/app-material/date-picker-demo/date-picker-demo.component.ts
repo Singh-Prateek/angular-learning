@@ -15,7 +15,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         { provide: MAT_DATE_FORMATS, useValue: APP_LUXON_DATE_FORMATS },
         { provide: MAT_DATE_LOCALE, useValue: 'en-IN' },
     ],
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, CdkMenu, LnMenuComponent, CdkMenuItem, LnMenuItemComponent]
 })
 export class DatePickerDemoComponent implements OnInit {

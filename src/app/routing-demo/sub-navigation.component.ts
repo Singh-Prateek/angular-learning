@@ -19,7 +19,6 @@ import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
   <router-outlet></router-outlet>
   `,
     styleUrls: [],
-    standalone: true,
     imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class SubNavigationComponent implements OnInit {

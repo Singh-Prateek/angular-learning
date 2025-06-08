@@ -6,7 +6,6 @@ import { MainNavigationComponent } from './main-navigation/main-navigation.compo
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: true,
     imports: [MainNavigationComponent, RouterOutlet]
 })
 export class AppComponent {

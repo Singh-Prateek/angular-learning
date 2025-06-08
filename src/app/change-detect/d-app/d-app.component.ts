@@ -10,7 +10,6 @@ import { DefaultCounterComponent } from '../default-counter/default-counter.comp
     selector: 'app-d-app',
     templateUrl: './d-app.component.html',
     styleUrls: ['./d-app.component.scss'],
-    standalone: true,
     imports: [DefaultCounterComponent, PushCounterComponent, PushCounter2Component, PushCounter3Component, PushCounter4Component]
 })
 export class DAppComponent implements OnInit {

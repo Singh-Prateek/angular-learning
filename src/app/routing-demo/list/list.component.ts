@@ -10,7 +10,6 @@ import { NgFor } from '@angular/common';
     </ul>
   `,
     styles: [],
-    standalone: true,
     imports: [NgFor]
 })
 export class ListComponent implements OnInit {

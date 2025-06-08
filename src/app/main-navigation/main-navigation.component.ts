@@ -5,7 +5,6 @@ import { RouterLinkActive, RouterLink } from '@angular/router';
     selector: 'app-main-navigation',
     templateUrl: './main-navigation.component.html',
     styleUrls: ['./main-navigation.component.scss'],
-    standalone: true,
     imports: [RouterLinkActive, RouterLink]
 })
 export class MainNavigationComponent implements OnInit {

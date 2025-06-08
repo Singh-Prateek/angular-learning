@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();
 
 // Define a dark theme
 $dark-theme: mat.define-theme((
@@ -27,13 +28,15 @@ $light-theme: mat.define-theme((
 
  html{
 
-   @include mat.core-theme($dark-theme);
+   @include mat.elevation-classes();
+   @include mat.app-background();
    @include mat.all-component-themes($dark-theme);
 
    @media (prefers-color-scheme: light) {
     // Use the `-color` mixins to only apply color styles without reapplying the same
     // typography and density styles.
-    @include mat.core-color($light-theme);
+    @include mat.elevation-classes();
+    @include mat.app-background();
     @include mat.all-component-colors($light-theme);
   }
  }

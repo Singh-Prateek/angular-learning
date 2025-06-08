@@ -7,7 +7,6 @@ import { NumericTextboxDirective } from '../numeric-textbox.directive';
     selector: 'app-attr-demo',
     templateUrl: './attr-demo.component.html',
     styleUrls: ['./attr-demo.component.scss'],
-    standalone: true,
     imports: [NumericTextboxDirective, DisableAfterClickDirective]
 })
 export class AttrDemoComponent implements OnInit {

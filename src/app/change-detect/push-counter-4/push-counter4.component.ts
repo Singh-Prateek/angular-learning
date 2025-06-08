@@ -12,7 +12,6 @@ import { NgIf, AsyncPipe } from '@angular/common';
   </ng-container>
   `,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [NgIf, AsyncPipe]
 })
 export class PushCounter4Component implements OnInit {

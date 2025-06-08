@@ -15,7 +15,6 @@ import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
   </nav>
   <router-outlet></router-outlet>
   `,
-    standalone: true,
     imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class MatSubNavigationComponent implements OnInit {
