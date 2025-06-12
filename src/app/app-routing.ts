@@ -3,6 +3,7 @@ import { DAppComponent } from './change-detect/d-app/d-app.component';
 import { AttrDemoComponent } from './custom-attr/attr-demo/attr-demo.component';
 import { ScrollServiceComponent } from './scroll-service/scroll-service.component';
 import { UniqueIdComponent } from './unique-id/unique-id.component';
+import { GeneratePhotoDescComponent } from './generate-photo-desc/generate-photo-desc.component';
 
 export const routes: Routes = [
   {
@@ -31,5 +32,10 @@ export const routes: Routes = [
   {
     path: "deeprouting",
     loadChildren: () => import('./routing-demo/routing-demo-routing')
+  },
+  {
+    path: "photogen",
+    component: GeneratePhotoDescComponent,
+    title: "Photo Generation"
   }
 ];
