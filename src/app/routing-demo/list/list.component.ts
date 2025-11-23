@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { NgFor } from '@angular/common';
+
 
 @Component({
     selector: 'app-list',
     template: `
     <h1>Sample List of vegetables</h1>
-    <ul  *ngFor="let v of vegies">
-      <li>{{v}}</li>
-    </ul>
-  `,
+    @for (v of vegies; track v) {
+      <ul >
+        <li>{{v}}</li>
+      </ul>
+    }
+    `,
     styles: [],
-    imports: [NgFor]
+    imports: []
 })
 export class ListComponent implements OnInit {
 

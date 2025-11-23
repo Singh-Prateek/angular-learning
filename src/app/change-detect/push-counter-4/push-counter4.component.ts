@@ -1,18 +1,18 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { NgIf, AsyncPipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
     selector: 'app-push-counter4',
     template: `
-  <ng-container *ngIf="Counter | async; let data">
-   <input [value]="cbx" (change)="textChange($event)" /> 
-  <h3> count in child <br>(push stratgey) = {{data.count}}</h3>
-   <pre>text input : {{cbx}} </pre>
-  </ng-container>
+  @if (Counter | async; as data) {
+    <input [value]="cbx" (change)="textChange($event)" />
+    <h3> count in child <br>(push stratgey) = {{data.count}}</h3>
+    <pre>text input : {{cbx}} </pre>
+  }
   `,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [NgIf, AsyncPipe]
+    imports: [AsyncPipe]
 })
 export class PushCounter4Component implements OnInit {
 
