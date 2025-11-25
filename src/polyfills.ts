@@ -43,9 +43,10 @@
  */
 
 /***************************************************************************************************
- * Zone JS is required by default for Angular itself.
+ * Zone JS is removed to run Angular in a zoneless configuration. If you need to
+ * re-enable Zone-based change detection for debugging, restore the import below.
  */
-import 'zone.js';  // Included with Angular CLI.
+// import 'zone.js';  // Previously included with Angular CLI.
 
 
 /***************************************************************************************************
