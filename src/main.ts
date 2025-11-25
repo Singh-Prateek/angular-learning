@@ -2,7 +2,7 @@ import { enableProdMode } from '@angular/core';
 
 import { environment } from './environments/environment';
 import { AppComponent } from './app/app.component';
-import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 import { routes } from './app/app-routing';
@@ -14,7 +14,7 @@ if (environment.production) {
 }
 
 bootstrapApplication(AppComponent, {
-  providers: [provideAnimations(), provideRouter(routes)
+  providers: [provideAnimationsAsync(), provideRouter(routes)
   ]
 })
   .catch(err => console.error(err));
