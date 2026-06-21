@@ -9,7 +9,7 @@ export class AppDateAdapter extends LuxonDateAdapter {
      *
      */
     constructor(@Optional() @Inject(MAT_DATE_LOCALE) private matDateLocale: string,) {
-        super(matDateLocale);
+        super();
     }
 
     override getDayOfWeekNames(style: "long" | "short" | "narrow"): string[] {
