@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { DisableAfterClickDirective } from '../disable-after-click.directive';
 import { NumericTextboxDirective } from '../numeric-textbox.directive';
@@ -7,6 +7,7 @@ import { NumericTextboxDirective } from '../numeric-textbox.directive';
     selector: 'app-attr-demo',
     templateUrl: './attr-demo.component.html',
     styleUrls: ['./attr-demo.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [NumericTextboxDirective, DisableAfterClickDirective]
 })
 export class AttrDemoComponent implements OnInit {

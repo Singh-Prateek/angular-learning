@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-home',
@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
     </h1>
   `,
     styles: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true
 })
 export class HomeComponent implements OnInit {

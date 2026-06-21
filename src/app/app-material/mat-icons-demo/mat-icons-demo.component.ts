@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { MatIconRegistry, MatIconModule } from '@angular/material/icon';
 
 @Component({
     selector: 'app-mat-icons-demo',
     templateUrl: './mat-icons-demo.component.html',
     styleUrls: ['./mat-icons-demo.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [MatIconModule]
 })
 export class MatIconsDemoComponent implements OnInit {

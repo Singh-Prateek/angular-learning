@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -19,6 +19,7 @@ import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
   <router-outlet></router-outlet>
   `,
     styleUrls: [],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class SubNavigationComponent implements OnInit {

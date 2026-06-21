@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -15,6 +15,7 @@ import { RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
   </nav>
   <router-outlet></router-outlet>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class MatSubNavigationComponent implements OnInit {

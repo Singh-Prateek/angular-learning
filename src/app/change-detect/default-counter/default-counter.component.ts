@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 @Component({
     selector: 'app-default-counter',
     template: `<h3> count in child = {{Counter.count}}</h3>`,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
 })
 export class DefaultCounterComponent implements OnInit {
