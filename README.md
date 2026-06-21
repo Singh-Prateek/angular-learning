@@ -1,8 +1,8 @@
 [![Node.js build](https://github.com/Singh-Prateek/angular-learning/actions/workflows/node.js.yml/badge.svg)](https://github.com/Singh-Prateek/angular-learning/actions/workflows/node.js.yml)
 
-# Angular 20
+# Angular 22
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 22.0.2.
 
 ## Development server
 
@@ -20,4 +20,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Update
 ```
-ng update @angular/core@20 @angular/cli@20 @angular/material@20
+ng update @angular/core@22 @angular/cli@22 @angular/material@22
