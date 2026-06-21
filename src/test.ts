@@ -1,15 +1,17 @@
-// This file is required by karma.conf.js and loads recursively all the .spec and framework files
+// Setup Angular testing environment for unit tests with Vitest/Jest.
+// This file is loaded automatically by the Angular CLI test builder.
 
-import 'zone.js/testing';
-import { getTestBed } from '@angular/core/testing';
-import {
-  BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting
-} from '@angular/platform-browser-dynamic/testing';
+import { getTestBed, TestEnvironmentOptions } from '@angular/core/testing';
 
-// First, initialize the Angular testing environment.
+import { BrowserTestingModule, platformBrowserTesting } from '@angular/platform-browser/testing';
+
+// Initialize the Angular testing environment.
+const options: TestEnvironmentOptions = {
+  teardown: { destroyAfterEach: true },
+};
+
 getTestBed().initTestEnvironment(
-  BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting(),
-  { teardown: { destroyAfterEach: true }},
+  BrowserTestingModule,
+  platformBrowserTesting(),
+  options
 );
