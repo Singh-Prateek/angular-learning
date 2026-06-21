@@ -25,7 +25,7 @@
     "luxon": "^3.7.2",
     "rxjs": "~7.5.5",
     "tslib": "^2.3.0",
-    "uuid": "^9.0.0"
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
     "@angular/build": "^22.0.3",
