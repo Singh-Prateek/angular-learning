@@ -1,11 +1,10 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
 
 @Component({
   selector: 'app-unique-id',
   templateUrl: './unique-id.component.html',
   styleUrls: ['./unique-id.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class UniqueIdComponent implements OnInit {

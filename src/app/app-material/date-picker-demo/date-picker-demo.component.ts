@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 import { AppDateAdapter, APP_LUXON_DATE_FORMATS } from './ExtendNativeAdapter';
 import { LnMenuComponent, LnMenuItemComponent } from '../ln-menu.component';
@@ -15,7 +15,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         { provide: MAT_DATE_FORMATS, useValue: APP_LUXON_DATE_FORMATS },
         { provide: MAT_DATE_LOCALE, useValue: 'en-IN' },
     ],
-    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, CdkMenu, LnMenuComponent, CdkMenuItem, LnMenuItemComponent]
 })
 export class DatePickerDemoComponent implements OnInit {

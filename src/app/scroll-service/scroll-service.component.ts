@@ -1,11 +1,10 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-service',
   templateUrl: './scroll-service.component.html',
   styleUrls: ['./scroll-service.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true
 })
 export class ScrollServiceComponent implements OnInit {

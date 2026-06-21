@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -12,7 +12,6 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
     }
     `,
     styles: [],
-    changeDetection: ChangeDetectionStrategy.Eager,
     imports: []
 })
 export class ListComponent implements OnInit {

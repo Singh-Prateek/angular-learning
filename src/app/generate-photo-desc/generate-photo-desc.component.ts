@@ -1,10 +1,9 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-generate-photo-desc',
   imports: [],
   templateUrl: './generate-photo-desc.component.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './generate-photo-desc.component.scss'
 })
 export class GeneratePhotoDescComponent {

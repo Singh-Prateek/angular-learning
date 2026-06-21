@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { PushCounter4Component } from '../push-counter-4/push-counter4.component';
 import { PushCounter3Component } from '../push-counter-3/push-counter3.component';
@@ -10,7 +10,6 @@ import { DefaultCounterComponent } from '../default-counter/default-counter.comp
     selector: 'app-d-app',
     templateUrl: './d-app.component.html',
     styleUrls: ['./d-app.component.scss'],
-    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [DefaultCounterComponent, PushCounterComponent, PushCounter2Component, PushCounter3Component, PushCounter4Component]
 })
 export class DAppComponent implements OnInit {
